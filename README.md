@@ -219,6 +219,10 @@ Este proyecto está bajo la Licencia MIT. Ver `LICENSE` para más detalles.
 - **Universidad del Tolima** - Institución educativa
 - **Ingeniería de Sistemas** - Programa académico
 - **Modalidad a Distancia** - Comunidad objetivo
+- Syntax Error:
+     - Diana Marcela Solarte Moreno
+     - Diego Fernando Rodríguez Orejuela
+     - Santiago Jaramillo Cardona
 
 ## 📞 Soporte
 
