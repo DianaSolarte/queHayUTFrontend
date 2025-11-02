@@ -55,8 +55,8 @@ Una aplicación web moderna y responsiva que conecta a los estudiantes de modali
 
 1. **Clonar el repositorio**
    ```bash
-   git clone https://github.com/tu-usuario/quehayut-frontend.git
-   cd quehayut-frontend
+   git clone https://github.com/DianaSolarte/queHayUTFrontend.git
+   cd queHayUTFrontend
    ```
 
 2. **Instalar dependencias**
@@ -83,7 +83,7 @@ Una aplicación web moderna y responsiva que conecta a los estudiantes de modali
 
 5. **Abrir en el navegador**
    ```
-   http://localhost:5173
+   http://localhost:5177
    ```
 
 ## 🏗️ Scripts Disponibles
@@ -147,7 +147,7 @@ La aplicación está diseñada para funcionar con el backend de Spring Boot. Par
 
 2. **Configura CORS en tu backend Spring Boot:**
    ```java
-   @CrossOrigin(origins = "http://localhost:5173")
+   @CrossOrigin(origins = "http://localhost:5177")
    ```
 
 3. **Endpoints esperados por el frontend:**
@@ -182,11 +182,25 @@ La aplicación incluye datos de ejemplo para demostración:
 npm run build
 ```
 
-### Despliegue en Netlify/Vercel
+### Despliegue en Netlify
+1. **Conecta tu repositorio GitHub a Netlify**
+2. **Configuración de build:**
+   - Build command: `npm run build`
+   - Publish directory: `dist`
+   - Node version: `20`
+3. **Variables de entorno en Netlify:**
+   ```
+   VITE_API_URL=https://tu-backend-url.com/api
+   VITE_APP_NAME=Qué Hay UT
+   VITE_UNIVERSITY_NAME=Universidad del Tolima
+   ```
+4. **Configuración automática:** El archivo `netlify.toml` se encarga del resto
+
+### Despliegue en Vercel
 1. Conecta tu repositorio
 2. Configura las variables de entorno
 3. Set build command: `npm run build`
-4. Set publish directory: `dist`
+4. Set output directory: `dist`
 
 ## 🤝 Contribuir
 
