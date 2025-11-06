@@ -69,6 +69,10 @@
           <span class="font-medium">{{ announcement.autor }}</span>
         </div>
         <div class="flex items-center space-x-2">
+          <MapPinIcon class="w-4 h-4" />
+          <span class="font-medium">{{ announcement.ubicacion }}</span>
+        </div>
+        <div class="flex items-center space-x-2">
           <ClockIcon class="w-4 h-4" />
           <span>{{ formatDate(announcement.fecha) }}</span>
         </div>
@@ -103,7 +107,8 @@ import {
   UserIcon,
   ClockIcon,
   ArrowTopRightOnSquareIcon,
-  ShareIcon
+  ShareIcon,
+  MapPinIcon,
 } from '@heroicons/vue/24/outline'
 
 const props = defineProps({

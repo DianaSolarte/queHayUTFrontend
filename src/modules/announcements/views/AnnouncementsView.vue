@@ -170,10 +170,11 @@ const fetchAnnouncements = async () => {
       titulo: evento.nombre,
       descripcion: evento.descripcion,
       autor: evento.organizador || 'Universidad del Tolima',
-      fecha: evento.createdAt || evento.fechaInicio,
+      fecha: evento.fechaInicio || evento.createdAt,
       prioridad: evento.estado === 'PROGRAMADO' ? 'alta' : 'media',
       categorias: ['academico'], 
-      enlace: null
+      enlace: null,
+      ubicacion: evento.ubicacion || null,
     }))
   } catch (err) {
     error.value = 'Error al cargar los anuncios del servidor.'
